@@ -44,4 +44,16 @@ public class Ordenador {
     static public void mostrarGarantia(){
        System.out.println("Todos los ordenadores tiene de  garantía: "+ garantia);
     }
+    public String getPantalla() {
+        return pantalla;
+    }
+    public void setPantalla(String pantalla) {
+        this.pantalla = pantalla;
+    }
+    public boolean isOrdenadorEncendido() {
+        return ordenadorEncendido;
+    }
+    public void setOrdenadorEncendido(boolean ordenadorEncendido) {
+        this.ordenadorEncendido = ordenadorEncendido;
+    }
 }

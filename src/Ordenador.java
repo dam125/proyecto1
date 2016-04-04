@@ -1,28 +1,20 @@
-
-
 /**Ampliar:    Crear atributo static
  *             método static mostrarGarantia()
- * 
  * @author ape
  */
 public class Ordenador {
     //atributos
-  private  String marca;
-   private String procesador;
-  private  String pantalla;
-  
- private   boolean ordenadorEncendido;
-    
-private      static final int garantia=2;
+    private String marca;
+    private String procesador;
+    private String pantalla;
+    private boolean ordenadorEncendido;
+    private static final int garantia=2;
      //Constructores  
     public Ordenador(){        
     }
-   
     public Ordenador(String marca, String procesador, String apagado){
         System.out.println("\nESTADO DEL ORDENADOR:" +"\nMarca  "+ marca +"\nProcesador  "+procesador+"\n"+apagado);
-    }   
-      
-      
+    }
     //metodos
     void encenderOrdenador(){
         if(ordenadorEncendido == true){
@@ -46,16 +38,10 @@ private      static final int garantia=2;
             System.out.println("El ordenador se ha apagado.\n");
         }
     }
-   
     void asignarPantalla(String pantalla){
         System.out.println(pantalla);
-        
     }
     static public void mostrarGarantia(){
-         
        System.out.println("Todos los ordenadores tiene de  garantía: "+ garantia);
-
-}
-
-    
+    }
 }
